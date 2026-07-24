@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+  // GitHub Pages clean URL redirect trick
+  // Redirects /video1 → /video1/ so index.html is served
+  var path = window.location.pathname;
+  // If path doesn't end with /, redirect to path + /
+  if (!path.endsWith('/')) {
+    window.location.replace(path + '/');
+  } else {
+    window.location.replace('/');
+  }
+</script>
+</head>
+<body></body>
+</html>
