@@ -15,19 +15,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1rem;
   }
-  .brand { font-size: 1.1rem; font-weight: 700; color: #2196F3; margin-bottom: 1.5rem; letter-spacing: 0.05em; text-transform: uppercase; }
+  .brand {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    font-weight: 700;
+    color: #2196F3;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+  }
   .video-wrap {
     width: 100%;
     max-width: 720px;
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
     background: #111;
     box-shadow: 0 8px 40px rgba(0,0,0,0.6);
   }
   video { width: 100%; display: block; }
-  .footer { margin-top: 1.5rem; color: #555; font-size: 0.8rem; text-align: center; }
+  .footer {
+    margin-top: 1.25rem;
+    color: #555;
+    font-size: clamp(0.75rem, 2.5vw, 0.85rem);
+    text-align: center;
+    padding: 0 1rem;
+  }
   .footer a { color: #2196F3; text-decoration: none; }
 </style>
 </head>
@@ -35,12 +49,12 @@
   <div class="brand">🚿 Bathroom Excellence</div>
   <div class="video-wrap">
     <video controls playsinline preload="metadata">
-      <source src="/videos/video3.mp4" type="video/mp4">
+      <source src="/be-videos/videos/Video 3.mp4" type="video/mp4">
       Your browser does not support video playback.
     </video>
   </div>
   <div class="footer">
-    <a href="https://bathroomexcellence.com">bathroomexcellence.com</a> &nbsp;·&nbsp; 636-795-4643
+    <a href="https://www.bathroomexcellence.com/">bathroomexcellence.com</a> &nbsp;·&nbsp; 636-795-4643
   </div>
 </body>
 </html>
